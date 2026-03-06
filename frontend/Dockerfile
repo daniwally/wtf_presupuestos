@@ -26,8 +26,11 @@ RUN yarn global add serve
 # Copy built files from build stage
 COPY --from=build /app/build ./build
 
+# Railway sets PORT env variable
+ENV PORT=3000
+
 # Expose port
 EXPOSE 3000
 
-# Start the server
-CMD ["serve", "-s", "build", "-l", "3000"]
+# Start the server - use sh to expand $PORT
+CMD sh -c "serve -s build -l tcp://0.0.0.0:${PORT}"
