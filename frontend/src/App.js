@@ -430,14 +430,14 @@ const SolutionSection = () => {
   const phases = [
     {
       number: "01",
-      title: "Fundación IA + CX",
+      title: "Optimización IA + CX",
       timeline: "Meses 1-3",
       items: [
-        { icon: Globe, text: "Website rediseño completo + e-commerce" },
         { icon: Instagram, text: "Instagram optimización + estrategia contenido IA" },
         { icon: MessageSquare, text: "AI chatbot + Customer Journey Mapping" },
-        { icon: Palette, text: "Branding refresh + sistema visual" },
-        { icon: Users, text: "CX Strategy: touchpoints & pain points analysis" },
+        { icon: Palette, text: "Refresh visual + sistema de marca" },
+        { icon: Search, text: "SEO optimización y posicionamiento" },
+        { icon: Users, text: "CX Strategy: touchpoints & pain points" },
       ],
       image: IMAGES.bathroom
     },
@@ -459,11 +459,11 @@ const SolutionSection = () => {
       title: "Innovación y Escala",
       timeline: "Meses 7-12",
       items: [
-        { icon: Smartphone, text: "AR/VR diseñador de espacios (primero en Argentina)" },
+        { icon: Smartphone, text: "AR/VR diseñador de espacios" },
         { icon: MessageSquare, text: "Experiencias phygital en puntos de venta" },
         { icon: Users, text: "Programa de fidelización experiencial" },
         { icon: TrendingUp, text: "Thought leadership + eventos propios" },
-        { icon: Globe, text: "Expansión regional del modelo CX" },
+        { icon: Globe, text: "Expansión regional del modelo" },
       ],
       image: IMAGES.architecture
     },
@@ -477,10 +477,10 @@ const SolutionSection = () => {
           <div className="mb-20 text-center">
             <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100] mb-4 block">03 — Solución WTF</span>
             <h2 className="font-playfair text-4xl md:text-6xl font-medium tracking-tight mb-6">
-              IA + CX + Experiencial
+              Optimización Integral
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Servicio integral con IA como core, Customer Experience y Marketing Experiencial para convertir a Barugel en líder indiscutido.
+              Potenciar lo que ya existe. Optimizar cada punto de contacto. Elevar la experiencia Barugel.
             </p>
           </div>
         </SectionReveal>
@@ -555,12 +555,12 @@ const SolutionSection = () => {
 // Investment Section
 const InvestmentSection = () => {
   const serviciosIncluidos = [
-    "Branding & Identidad Visual",
+    "Optimización de Marca & Identidad",
     "Diseño de Folletos & Catálogos",
     "Avisos Gráficos & Digitales",
     "Diseño de Vidrieras (todos los locales)",
     "Cartelería POP & Señalética",
-    "Contenido Redes Sociales",
+    "Contenido & Gestión Redes Sociales",
     "Estrategia IA & Automatización",
     "Customer Experience Design",
     "Marketing Experiencial & Activaciones",
@@ -658,18 +658,37 @@ const InvestmentSection = () => {
 
 // Results Dashboard Section
 const ResultsSection = () => {
-  const digitalMetrics = [
-    { label: "Seguidores Instagram", current: "97K", projected: "300K", growth: "+209%" },
-    { label: "Tráfico Website", current: "Base", projected: "+500%", growth: "5x" },
-    { label: "Revenue E-commerce", current: "$0", projected: "$2M", growth: "Año 1" },
-    { label: "Rankings SEO", current: "-", projected: "#1", growth: "20+ keywords" },
-    { label: "Engagement Rate", current: "2%", projected: "8%", growth: "+300%" },
-  ];
-
-  const businessMetrics = [
-    { value: 500, suffix: "%", label: "Aumento Generación Leads" },
-    { value: 35, suffix: "%", label: "Ventas Digitales del Total" },
-    { value: 200, suffix: "%", label: "Customer Lifetime Value" },
+  const improvements = [
+    { 
+      title: "Presencia que Impacta", 
+      description: "De marca reconocida a marca deseada. Cada punto de contacto reflejará los 90 años de excelencia.",
+      icon: Target
+    },
+    { 
+      title: "Conexión Emocional", 
+      description: "Arquitectos y clientes no solo elegirán Barugel, sentirán que es la única opción.",
+      icon: Users
+    },
+    { 
+      title: "Experiencias Memorables", 
+      description: "Cada visita al showroom, cada interacción digital, será un momento que se recuerda y se comparte.",
+      icon: Zap
+    },
+    { 
+      title: "Liderazgo Natural", 
+      description: "La conversación del sector pasará por Barugel. No competir, liderar.",
+      icon: TrendingUp
+    },
+    { 
+      title: "Comunidad de Profesionales", 
+      description: "Arquitectos y diseñadores como embajadores naturales de la marca.",
+      icon: Building2
+    },
+    { 
+      title: "Innovación Constante", 
+      description: "Siempre un paso adelante. La referencia cuando se habla de futuro en el sector.",
+      icon: Smartphone
+    },
   ];
 
   return (
@@ -682,57 +701,50 @@ const ResultsSection = () => {
         {/* Section Header */}
         <SectionReveal>
           <div className="mb-20 text-center">
-            <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100] mb-4 block">05 — Resultados</span>
+            <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100] mb-4 block">05 — Visión</span>
             <h2 className="font-playfair text-4xl md:text-6xl font-medium tracking-tight mb-6">
-              Resultados Proyectados
+              El Barugel que Viene
             </h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-              Métricas de impacto a 12 meses basadas en nuestra metodología probada.
+              No se trata de números. Se trata de convertir 90 años de historia en 90 años más de liderazgo.
             </p>
           </div>
         </SectionReveal>
 
-        {/* Digital Performance Grid */}
-        <SectionReveal className="mb-20">
-          <h3 className="text-xs font-mono tracking-[0.2em] uppercase text-gray-500 mb-8">Performance Digital</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {digitalMetrics.map((metric, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ scale: 1.02, borderColor: "#E65100" }}
-                className="p-6 border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300"
-                data-testid={`digital-metric-${index}`}
-              >
-                <div className="text-xs text-gray-500 mb-4">{metric.label}</div>
-                <div className="flex items-end justify-between">
-                  <div>
-                    <span className="text-gray-500 text-sm line-through mr-2">{metric.current}</span>
-                    <span className="text-3xl font-playfair text-white">{metric.projected}</span>
-                  </div>
-                  <span className="text-[#E65100] font-mono text-sm">{metric.growth}</span>
-                </div>
-              </motion.div>
-            ))}
+        {/* Improvements Grid */}
+        <SectionReveal>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {improvements.map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <motion.div
+                  key={index}
+                  whileHover={{ y: -8, borderColor: "#E65100" }}
+                  className="p-8 border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-500 group"
+                  data-testid={`improvement-${index}`}
+                >
+                  <Icon className="w-8 h-8 text-[#E65100] mb-6 group-hover:scale-110 transition-transform" />
+                  <h3 className="font-playfair text-xl mb-3 group-hover:text-[#E65100] transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-400 leading-relaxed">
+                    {item.description}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </SectionReveal>
 
-        {/* Business Impact */}
+        {/* Bottom Quote */}
         <SectionReveal>
-          <h3 className="text-xs font-mono tracking-[0.2em] uppercase text-gray-500 mb-8">Impacto en Negocio</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {businessMetrics.map((metric, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -8 }}
-                className="text-center p-10 border border-[#E65100] bg-[#E65100]/5"
-                data-testid={`business-metric-${index}`}
-              >
-                <div className="text-6xl md:text-7xl font-playfair text-[#E65100] mb-4">
-                  <AnimatedCounter end={metric.value} suffix={metric.suffix} prefix="+" />
-                </div>
-                <div className="text-sm text-gray-400">{metric.label}</div>
-              </motion.div>
-            ))}
+          <div className="mt-20 text-center">
+            <div className="inline-block p-8 border border-[#E65100]/30 bg-[#E65100]/5">
+              <p className="font-playfair text-2xl md:text-3xl italic text-white/90 mb-4">
+                "El objetivo no es ser la mejor opción.<br/>Es ser la única opción."
+              </p>
+              <span className="text-xs font-mono tracking-[0.2em] text-[#E65100]">— WTF AGENCY</span>
+            </div>
           </div>
         </SectionReveal>
       </div>
