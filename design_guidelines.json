@@ -1,0 +1,150 @@
+{
+  "project_identity": {
+    "name": "WTF Agency Proposal System",
+    "persona": "E1 - The Anti-AI Designer",
+    "vibe": "Elegant Noir, High-Stakes, Provocative Luxury",
+    "description": "A single-page, dynamic proposal presentation system designed to close 6-figure deals. It replaces the boring PDF with an immersive, interactive digital experience.",
+    "emotional_archetype": "Jewel & Luxury (Archetype 5) mixed with Swiss Precision"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-bold tracking-tight leading-[1.1]",
+      "h2": "text-3xl md:text-5xl font-semibold tracking-tight",
+      "h3": "text-xl md:text-2xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed text-zinc-400"
+    },
+    "installation": "Import via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');"
+  },
+  "colors": {
+    "base": {
+      "background": "#050505",
+      "foreground": "#FAFAFA",
+      "card": "#0F0F0F",
+      "card_foreground": "#FFFFFF",
+      "border": "#27272A",
+      "muted": "#71717A"
+    },
+    "accents": {
+      "default": "#E11D48",
+      "wine": "#722F37",
+      "honda": "#D62626",
+      "census": "#2563EB"
+    },
+    "utility": {
+      "glass": "bg-black/60 backdrop-blur-xl border-white/5",
+      "gradient_overlay": "bg-gradient-to-t from-black via-black/50 to-transparent"
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "spacing": {
+      "section_gap": "py-24 md:py-32",
+      "element_gap": "gap-8 md:gap-12"
+    },
+    "grid": "grid grid-cols-1 md:grid-cols-12 gap-8"
+  },
+  "components": {
+    "ProposalHeader": {
+      "path": "src/components/ProposalHeader.js",
+      "style": "Fixed top, glassmorphism. Left: 'WTF Agency' logo (text). Right: Client Name (faded) + Contact Button.",
+      "interaction": "Fade in on load. Stays transparent until scroll, then adds glass blur."
+    },
+    "HeroSection": {
+      "path": "src/components/HeroSection.js",
+      "style": "Full viewport height (h-screen). Background image with heavy dark overlay. Centered massive typography.",
+      "content": "Dynamic 'Proposal for [ClientName]'. Subtext: 'Strategic Partnership 2024'.",
+      "motion": "Parallax background. Text staggers in from bottom."
+    },
+    "PricingTable": {
+      "path": "src/components/PricingTable.js",
+      "style": "3-column grid. Cards are dark gray (#0F0F0F) with 1px border. 'Recommended' tier is scaled 1.05x with a glowing border in client accent color.",
+      "features": "List items with check icons. Price is massive display text.",
+      "interaction": "Hover: Card lifts -10px, border glows brighter. Non-hovered cards fade slightly (opacity 0.5)."
+    },
+    "Timeline": {
+      "path": "src/components/Timeline.js",
+      "style": "Vertical center line. Nodes alternate left/right. Content glass cards.",
+      "interaction": "Scroll triggers the line drawing (SVG path animation). Nodes pop in when in view."
+    },
+    "ContactSection": {
+      "path": "src/components/ContactSection.js",
+      "style": "Minimalist. Large 'Ready to Proceed?' text. Two buttons: 'Accept Proposal' (Solid Accent) vs 'Discuss' (Outline).",
+      "motion": "Fade up."
+    },
+    "ErrorPage": {
+        "path": "src/pages/ErrorPage.js",
+        "style": "Simple, dark, centered. '404: Client Not Found'. Button to return home (or demo)."
+    }
+  },
+  "assets": {
+    "images": {
+      "wine_hero": {
+        "url": "https://images.unsplash.com/photo-1695048475432-b7c21fb21e9e?q=80&w=2000&auto=format&fit=crop",
+        "alt": "Luxury Wine Bottle in Dark Vineyard"
+      },
+      "honda_hero": {
+        "url": "https://images.unsplash.com/photo-1762314908735-6c7fab306f86?q=80&w=2000&auto=format&fit=crop",
+        "alt": "Red Sports Car Dark"
+      },
+      "census_hero": {
+        "url": "https://images.unsplash.com/photo-1744070018851-5b2f5a3d1d81?q=80&w=2000&auto=format&fit=crop",
+        "alt": "Abstract Data Orb"
+      },
+      "agency_hero": {
+        "url": "https://images.unsplash.com/photo-1758520145175-aa3b593b81af?q=80&w=2000&auto=format&fit=crop",
+        "alt": "Creative Team Working Late"
+      }
+    },
+    "icons": "Use lucide-react. Examples: Check, ArrowRight, X, Menu, DollarSign, Calendar."
+  },
+  "data_structure": {
+    "file": "src/data/proposals.json",
+    "schema": [
+      {
+        "id": "wine",
+        "clientName": "Château Margaux",
+        "accentColor": "#722F37",
+        "heroImage": "wine_hero_url",
+        "pricing": [
+             {"title": "Essential", "price": "$50k", "features": ["Brand Audit", "Visual ID", "Guidelines"]},
+             {"title": "Growth", "price": "$85k", "features": ["Everything in Essential", "Web Design", "Social Strategy"], "recommended": true},
+             {"title": "Dominance", "price": "$150k", "features": ["Everything in Growth", "Campaign Management", "TVC Production"]}
+        ],
+        "timeline": [
+            {"phase": "Phase 1", "title": "Discovery", "duration": "2 Weeks"},
+            {"phase": "Phase 2", "title": "Design", "duration": "4 Weeks"},
+            {"phase": "Phase 3", "title": "Development", "duration": "6 Weeks"}
+        ]
+      }
+    ]
+  },
+  "motion_guidelines": {
+    "library": "framer-motion",
+    "defaults": {
+      "duration": 0.6,
+      "ease": [0.22, 1, 0.36, 1],
+      "stagger": 0.1
+    },
+    "scroll": "Use 'whileInView' with 'viewport={{ once: true, margin: \"-100px\" }}'"
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALLATION: Run 'yarn add framer-motion lucide-react clsx tailwind-merge'.",
+    "2. SETUP: Update tailwind.config.js to include the custom colors and fonts.",
+    "3. FONTS: Add the Google Fonts import to index.css immediately.",
+    "4. ROUTING: Use react-router-dom. Create a layout that reads the ':clientId' param.",
+    "5. DATA: Create the mock JSON data first in src/data/proposals.json.",
+    "6. COMPONENTS: Build components using the 'glass' utility class for backgrounds. Do not use solid white backgrounds.",
+    "7. DEBUG: If an image fails to load, have a fallback solid color background based on the client accent.",
+    "8. CRITICAL: Ensure all interactive elements have data-testid attributes."
+  ],
+  "universal_guidelines": {
+      "no_gradients_text": "Do not use gradient text on dark backgrounds unless it is very subtle.",
+      "contrast": "Ensure text is #FAFAFA (zinc-50) or #A1A1AA (zinc-400). Never use #555 on black.",
+      "spacing": "Use py-24 for section spacing. Don't cram content."
+  }
+}
