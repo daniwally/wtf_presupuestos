@@ -16,21 +16,21 @@ COPY . .
 RUN yarn build
 
 # Production stage  
-FROM node:20-alpine AS production
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy built files to nginx
+COPY --from=build /app/build /usr/share/nginx/html
 
-# Install serve globally
-RUN yarn global add serve
+# Copy nginx config for SPA routing
+RUN echo 'server { \
+    listen 80; \
+    location / { \
+        root /usr/share/nginx/html; \
+        index index.html; \
+        try_files $uri $uri/ /index.html; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
 
-# Copy built files from build stage
-COPY --from=build /app/build ./build
+EXPOSE 80
 
-# Railway sets PORT env variable
-ENV PORT=3000
-
-# Expose port
-EXPOSE 3000
-
-# Start the server - use sh to expand $PORT
-CMD sh -c "serve -s build -l tcp://0.0.0.0:${PORT}"
+CMD ["nginx", "-g", "daemon off;"]
