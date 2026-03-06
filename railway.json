@@ -1,0 +1,16 @@
+{
+  "build": {
+    "command": "echo 'Static sites ready for deployment'"
+  },
+  "deploy": {
+    "staticFilePath": ".",
+    "healthcheckPath": "/shared/wtf-branding.css"
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

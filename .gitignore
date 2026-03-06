@@ -1,0 +1,24 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
+
+# Railway local
+.railway/
+
+# Environment variables (if any)
+.env
+.env.local

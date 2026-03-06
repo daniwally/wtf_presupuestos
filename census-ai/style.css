@@ -1,0 +1,58 @@
+/* Census AI - Client Specific Styles */
+
+/* Custom hero styling for Census */
+.section h1 {
+    background: linear-gradient(135deg, #000 0%, #333 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* AI-themed accents */
+.timeline-item::before {
+    background: linear-gradient(45deg, #000, #666);
+}
+
+/* Data-focused color scheme */
+.pricing-tier:nth-child(2) {
+    border-color: #000;
+    border-width: 2px;
+    position: relative;
+}
+
+.pricing-tier:nth-child(2)::after {
+    content: 'RECOMMENDED';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    color: white;
+    padding: 0.25rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* Tech-forward grid */
+.section:nth-child(5) div {
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.section:nth-child(5) div:hover {
+    border-color: #000;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pricing-tier:nth-child(2)::after {
+        position: static;
+        transform: none;
+        display: block;
+        margin: -1rem -2rem 1rem;
+        text-align: center;
+    }
+}
