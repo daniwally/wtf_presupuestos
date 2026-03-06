@@ -435,7 +435,7 @@ const SolutionSection = () => {
         { icon: Globe, text: "Website rediseño completo + e-commerce" },
         { icon: Instagram, text: "Instagram optimización + estrategia contenido IA" },
         { icon: MessageSquare, text: "AI chatbot + Customer Journey Mapping" },
-        { icon: Search, text: "SEO dominación (20+ keywords)" },
+        { icon: Palette, text: "Branding refresh + sistema visual" },
         { icon: Users, text: "CX Strategy: touchpoints & pain points analysis" },
       ],
       image: IMAGES.bathroom
@@ -445,11 +445,11 @@ const SolutionSection = () => {
       title: "Marketing Experiencial",
       timeline: "Meses 4-6",
       items: [
-        { icon: Palette, text: "Activaciones experienciales en showrooms" },
+        { icon: Palette, text: "Diseño vidrieras + cartelería todos los locales" },
         { icon: Video, text: "Eventos inmersivos para arquitectos" },
-        { icon: Users, text: "Partnerships influencers (15 arquitectos)" },
-        { icon: Target, text: "Pop-up experiences en obras destacadas" },
-        { icon: Zap, text: "Brand activations en ferias del sector" },
+        { icon: Target, text: "Folletos, catálogos y material POP" },
+        { icon: Users, text: "Activaciones experienciales en showrooms" },
+        { icon: Zap, text: "Campañas de avisos gráficos y digitales" },
       ],
       image: IMAGES.showroom
     },
@@ -553,10 +553,16 @@ const SolutionSection = () => {
 
 // Investment Section
 const InvestmentSection = () => {
-  const comparison = [
-    { method: "Agencia Tradicional", price: "USD 8,000+/mes", status: "Sin IA" },
-    { method: "Equipo In-House", price: "USD 15,000+/mes", status: "Complejo" },
-    { method: "WTF Agency", price: "USD 3,500/mes", status: "IA Integrada", highlight: true },
+  const serviciosIncluidos = [
+    "Branding & Identidad Visual",
+    "Diseño de Folletos & Catálogos",
+    "Avisos Gráficos & Digitales",
+    "Diseño de Vidrieras (todos los locales)",
+    "Cartelería POP & Señalética",
+    "Contenido Redes Sociales",
+    "Estrategia IA & Automatización",
+    "Customer Experience Design",
+    "Marketing Experiencial & Activaciones",
   ];
 
   return (
@@ -570,7 +576,7 @@ const InvestmentSection = () => {
               Estructura de Inversión
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl">
-              Servicio integral de agencia con IA como core. Sin costos ocultos.
+              Servicio integral de agencia: desde branding hasta IA. Todo incluido.
             </p>
           </div>
         </SectionReveal>
@@ -607,8 +613,8 @@ const InvestmentSection = () => {
                   <span className="text-sm font-medium text-[#E65100]">Sin costo</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-gray-100">
-                  <span className="text-sm text-gray-600">IA Integrada</span>
-                  <span className="text-sm font-medium text-[#E65100]">Incluida</span>
+                  <span className="text-sm text-gray-600">Todos los Locales</span>
+                  <span className="text-sm font-medium text-[#E65100]">Incluidos</span>
                 </div>
                 <div className="flex justify-between py-3">
                   <span className="text-sm text-gray-600">Facturación</span>
@@ -618,48 +624,29 @@ const InvestmentSection = () => {
 
               <div className="p-4 bg-[#F5F5F5] text-center">
                 <span className="text-xs font-mono tracking-wider text-gray-500">
-                  IA + CUSTOMER EXPERIENCE + MARKETING EXPERIENCIAL
+                  SERVICIO INTEGRAL DE AGENCIA
                 </span>
               </div>
             </motion.div>
           </SectionReveal>
 
-          {/* Comparison */}
+          {/* Servicios Incluidos */}
           <SectionReveal>
-            <h3 className="font-playfair text-2xl mb-8">Comparativa de Alternativas</h3>
-            <div className="space-y-4">
-              {comparison.map((item, index) => (
+            <h3 className="font-playfair text-2xl mb-8">Todo Incluido</h3>
+            <div className="grid grid-cols-1 gap-3">
+              {serviciosIncluidos.map((servicio, index) => (
                 <motion.div
                   key={index}
-                  whileHover={{ x: item.highlight ? 0 : 8 }}
-                  className={`p-6 border ${
-                    item.highlight 
-                      ? 'border-[#E65100] bg-[#E65100]/5' 
-                      : 'border-gray-200 bg-white'
-                  } transition-all`}
-                  data-testid={`comparison-card-${index}`}
+                  whileHover={{ x: 8 }}
+                  className="flex items-center gap-4 p-4 bg-white border border-gray-100 hover:border-[#E65100] transition-all group"
+                  data-testid={`servicio-${index}`}
                 >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className={`text-lg font-medium ${item.highlight ? 'text-[#E65100]' : 'text-[#1A1A1A]'}`}>
-                        {item.method}
-                      </div>
-                      <div className="text-xs text-gray-500 mt-1">{item.status}</div>
-                    </div>
-                    <div className={`text-2xl font-playfair ${item.highlight ? 'text-[#E65100]' : 'text-gray-400 line-through'}`}>
-                      {item.price}
-                    </div>
-                  </div>
+                  <CheckCircle className="w-5 h-5 text-[#E65100] flex-shrink-0" />
+                  <span className="text-sm text-gray-700 group-hover:text-[#1A1A1A] transition-colors">
+                    {servicio}
+                  </span>
                 </motion.div>
               ))}
-            </div>
-
-            <div className="mt-8 p-6 bg-[#1A1A1A] text-white">
-              <div className="flex items-center justify-between">
-                <span className="text-sm">Ahorro vs. Agencia Tradicional</span>
-                <span className="text-2xl font-playfair text-[#E65100]">56%+</span>
-              </div>
-              <p className="text-xs text-gray-400 mt-2">Con IA integrada y resultados superiores</p>
             </div>
           </SectionReveal>
         </div>
