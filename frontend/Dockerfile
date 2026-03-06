@@ -20,14 +20,17 @@ FROM node:20-alpine AS production
 
 WORKDIR /app
 
-# Install serve globally
-RUN npm install -g serve
+# Copy package.json for serve
+COPY package.json ./
+
+# Install only serve
+RUN yarn add serve
 
 # Copy built files from build stage
 COPY --from=build /app/build ./build
 
-# Expose port (Railway will set PORT env var)
+# Expose port
 EXPOSE 3000
 
-# Start the server
-CMD ["sh", "-c", "serve -s build -l ${PORT:-3000}"]
+# Start the server using npx
+CMD ["npx", "serve", "-s", "build", "-l", "3000"]
