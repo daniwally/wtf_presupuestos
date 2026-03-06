@@ -1,0 +1,272 @@
+{
+  "wine": {
+    "id": "wine",
+    "clientName": "Chateau Margaux",
+    "industry": "Wine & Spirits",
+    "accentColor": "#722F37",
+    "heroImage": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2070&auto=format&fit=crop",
+    "hero": {
+      "headline": "Elevating Wine Brands Through Sophisticated Marketing",
+      "subtitle": "Crafting premium experiences for discerning wine enthusiasts"
+    },
+    "pricing": [
+      {
+        "id": "heritage",
+        "title": "Heritage",
+        "price": "$15K",
+        "duration": "4 weeks",
+        "description": "Foundation for brand excellence",
+        "features": [
+          "Brand Heritage Audit",
+          "Market Positioning Analysis",
+          "Consumer Insights Report",
+          "Competitive Landscape Review",
+          "Initial Strategy Framework"
+        ]
+      },
+      {
+        "id": "vineyard",
+        "title": "Vineyard",
+        "price": "$45K",
+        "duration": "12 weeks",
+        "description": "Complete campaign development",
+        "recommended": true,
+        "features": [
+          "Everything in Heritage",
+          "Complete Campaign Development",
+          "Multi-channel Strategy",
+          "Premium Content Creation",
+          "Influencer Partnership Strategy",
+          "Launch Execution Support"
+        ]
+      },
+      {
+        "id": "estate",
+        "title": "Estate",
+        "price": "$18K/mo",
+        "duration": "Ongoing",
+        "description": "Continuous brand management",
+        "features": [
+          "Dedicated Brand Management",
+          "Seasonal Campaign Planning",
+          "Market Expansion Strategy",
+          "Monthly Performance Reports",
+          "Priority Support Access",
+          "Quarterly Strategy Reviews"
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "phase": "Phase 1",
+        "title": "Brand Discovery",
+        "duration": "Month 1",
+        "description": "Deep exploration of wine heritage, terroir storytelling, and market positioning through stakeholder interviews and competitive analysis."
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Strategy Development",
+        "duration": "Month 2-3",
+        "description": "Comprehensive marketing strategy development including brand narrative, visual identity refinement, and channel strategy."
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Creative Production",
+        "duration": "Month 4-5",
+        "description": "Premium content creation, photography direction, and campaign asset development across all touchpoints."
+      },
+      {
+        "phase": "Phase 4",
+        "title": "Market Launch",
+        "duration": "Month 6+",
+        "description": "Multi-channel campaign execution, performance optimization, and ongoing market expansion initiatives."
+      }
+    ],
+    "contact": {
+      "name": "Alexandra Chen",
+      "role": "Senior Account Director",
+      "email": "alexandra@wtfagency.com",
+      "phone": "+1 (555) 123-4567"
+    }
+  },
+  "honda": {
+    "id": "honda",
+    "clientName": "Honda Motors",
+    "industry": "Automotive",
+    "accentColor": "#D62626",
+    "heroImage": "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=2070&auto=format&fit=crop",
+    "hero": {
+      "headline": "Driving Innovation Through Bold Automotive Marketing",
+      "subtitle": "Accelerating your brand's journey to market leadership"
+    },
+    "pricing": [
+      {
+        "id": "ignition",
+        "title": "Ignition",
+        "price": "$25K",
+        "duration": "6 weeks",
+        "description": "Launch your marketing engine",
+        "features": [
+          "Market Research & Analysis",
+          "Brand Positioning Strategy",
+          "Competitive Intelligence",
+          "Target Audience Profiling",
+          "Channel Recommendations"
+        ]
+      },
+      {
+        "id": "acceleration",
+        "title": "Acceleration",
+        "price": "$75K",
+        "duration": "16 weeks",
+        "description": "Full throttle campaign development",
+        "recommended": true,
+        "features": [
+          "Everything in Ignition",
+          "Integrated Campaign Development",
+          "Digital Experience Design",
+          "Video Production Suite",
+          "Dealer Network Strategy",
+          "Launch Event Coordination"
+        ]
+      },
+      {
+        "id": "dominance",
+        "title": "Dominance",
+        "price": "$35K/mo",
+        "duration": "Ongoing",
+        "description": "Continuous market leadership",
+        "features": [
+          "Always-On Campaign Management",
+          "Real-Time Performance Optimization",
+          "Social Media Command Center",
+          "Monthly Innovation Reports",
+          "Quarterly Market Reviews",
+          "Executive Dashboard Access"
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "phase": "Phase 1",
+        "title": "Market Intelligence",
+        "duration": "Weeks 1-4",
+        "description": "Comprehensive market analysis, consumer behavior studies, and competitive positioning research."
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Strategy & Creative",
+        "duration": "Weeks 5-10",
+        "description": "Campaign strategy development, creative concepting, and production planning across all channels."
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Production & Build",
+        "duration": "Weeks 11-14",
+        "description": "Full-scale content production, digital platform development, and dealer toolkit creation."
+      },
+      {
+        "phase": "Phase 4",
+        "title": "Launch & Optimize",
+        "duration": "Week 15+",
+        "description": "Campaign launch execution, real-time optimization, and performance-driven iteration."
+      }
+    ],
+    "contact": {
+      "name": "Marcus Rodriguez",
+      "role": "VP of Automotive",
+      "email": "marcus@wtfagency.com",
+      "phone": "+1 (555) 234-5678"
+    }
+  },
+  "census": {
+    "id": "census",
+    "clientName": "U.S. Census Bureau",
+    "industry": "Government",
+    "accentColor": "#2563EB",
+    "heroImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop",
+    "hero": {
+      "headline": "Connecting Communities Through Strategic Outreach",
+      "subtitle": "Data-driven campaigns that reach every American"
+    },
+    "pricing": [
+      {
+        "id": "foundation",
+        "title": "Foundation",
+        "price": "$50K",
+        "duration": "8 weeks",
+        "description": "Research and strategy groundwork",
+        "features": [
+          "Demographic Analysis",
+          "Hard-to-Count Population Research",
+          "Message Testing Framework",
+          "Stakeholder Mapping",
+          "Outreach Channel Strategy"
+        ]
+      },
+      {
+        "id": "mobilization",
+        "title": "Mobilization",
+        "price": "$150K",
+        "duration": "20 weeks",
+        "description": "Full-scale outreach program",
+        "recommended": true,
+        "features": [
+          "Everything in Foundation",
+          "Multi-Language Campaign Development",
+          "Community Partner Activation",
+          "Digital Advertising Campaign",
+          "Field Team Training Materials",
+          "Real-Time Response System"
+        ]
+      },
+      {
+        "id": "impact",
+        "title": "Impact",
+        "price": "$45K/mo",
+        "duration": "Ongoing",
+        "description": "Sustained engagement program",
+        "features": [
+          "Continuous Community Engagement",
+          "Response Rate Monitoring",
+          "Adaptive Messaging Updates",
+          "Partner Network Management",
+          "Compliance Reporting",
+          "Post-Campaign Analysis"
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "phase": "Phase 1",
+        "title": "Research & Planning",
+        "duration": "Months 1-2",
+        "description": "In-depth demographic research, stakeholder consultation, and comprehensive outreach strategy development."
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Content Development",
+        "duration": "Months 3-4",
+        "description": "Multi-language content creation, accessibility compliance, and community-specific messaging development."
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Partner Activation",
+        "duration": "Month 5",
+        "description": "Community organization engagement, partner training, and local ambassador program launch."
+      },
+      {
+        "phase": "Phase 4",
+        "title": "Campaign Execution",
+        "duration": "Month 6+",
+        "description": "Full campaign deployment, real-time monitoring, adaptive optimization, and impact measurement."
+      }
+    ],
+    "contact": {
+      "name": "Dr. Sarah Mitchell",
+      "role": "Director of Public Sector",
+      "email": "sarah@wtfagency.com",
+      "phone": "+1 (555) 345-6789"
+    }
+  }
+}
