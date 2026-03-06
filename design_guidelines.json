@@ -1,0 +1,108 @@
+{
+  "project_name": "Barugel Digital Transformation Proposal",
+  "brand_identity": {
+    "name": "Barugel",
+    "tone": "Sophisticated, Architectural, Visionary, Solid (90 Years)",
+    "keywords": ["Italian Design", "Construction", "Premium", "Transformation", "Heritage"],
+    "emotional_archetype": "The Architect (Vision + Structure)"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Manrope, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-6xl md:text-8xl font-medium tracking-tight leading-none",
+      "h2": "text-4xl md:text-6xl font-normal tracking-tight",
+      "h3": "text-2xl md:text-3xl font-medium tracking-normal",
+      "body": "text-base md:text-lg leading-relaxed text-gray-600",
+      "label": "text-xs font-mono tracking-[0.2em] uppercase text-gray-400"
+    },
+    "installation": "Import from Google Fonts: Playfair Display (400,500,700), Manrope (300,400,500,700), JetBrains Mono (400)"
+  },
+  "colors": {
+    "palette": {
+      "primary": "#1A1A1A", 
+      "secondary": "#E65100",
+      "background": "#FFFFFF",
+      "surface": "#F5F5F5",
+      "border": "#E5E5E5",
+      "text_primary": "#111111",
+      "text_secondary": "#666666"
+    },
+    "usage": {
+      "hero_bg": "bg-white",
+      "section_dark": "bg-[#1A1A1A] text-white",
+      "accent_highlight": "text-[#E65100]",
+      "border_subtle": "border-gray-200",
+      "glass_surface": "bg-white/80 backdrop-blur-md border border-white/20"
+    }
+  },
+  "layout_strategy": {
+    "grid_system": "Bento Grid (Asymmetrical)",
+    "spacing": "Generous (p-8 to p-24)",
+    "container": "max-w-7xl mx-auto px-6",
+    "border_radius": "rounded-none (Sharp corners for architectural feel) or rounded-sm (2px)",
+    "z_index_layers": {
+      "background": "-10",
+      "content": "10",
+      "sticky_nav": "50",
+      "modal": "100"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#1A1A1A] text-white hover:bg-[#E65100] transition-all duration-300 px-8 py-4 rounded-none uppercase tracking-widest text-sm font-mono border border-transparent",
+      "secondary": "bg-transparent text-[#1A1A1A] border border-[#1A1A1A] hover:bg-[#1A1A1A] hover:text-white transition-all duration-300 px-8 py-4 rounded-none uppercase tracking-widest text-sm font-mono",
+      "ghost": "text-[#666666] hover:text-[#E65100] transition-colors duration-200 uppercase tracking-widest text-xs"
+    },
+    "cards": {
+      "diagnosis": "bg-white border border-gray-100 hover:border-[#E65100] hover:shadow-xl transition-all duration-500 p-8 group relative overflow-hidden",
+      "stat": "bg-[#F5F5F5] p-6 border-l-2 border-[#1A1A1A] hover:bg-white hover:shadow-lg transition-all"
+    },
+    "timeline": {
+      "line": "w-[1px] bg-gray-200 h-full absolute left-0 md:left-1/2",
+      "marker": "w-4 h-4 bg-[#E65100] rounded-full border-4 border-white z-10"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle concrete grain overlay on light backgrounds (opacity 0.05)",
+    "shadows": "shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)]",
+    "glassmorphism": "Only for floating diagnosis panels: bg-white/90 backdrop-blur-xl border border-white/40 shadow-2xl",
+    "animations": {
+      "scroll": "Parallax effect on hero images",
+      "reveal": "Staggered fade-up for list items",
+      "hover": "Scale 1.02 + Border Color Change"
+    }
+  },
+  "image_urls": {
+    "hero_bg": "https://images.unsplash.com/photo-1765766600820-58eaf8687f1d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBtYXJibGUlMjBiYXRocm9vbSUyMG1pbmltYWxpc3R8ZW58MHx8fHwxNzcyNzYzMjQ0fDA&ixlib=rb-4.1.0&q=85",
+    "texture_concrete": "https://images.unsplash.com/photo-1591095475424-715e1a00a3c6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBjb25jcmV0ZSUyMGFic3RyYWN0fGVufDB8fHx8MTc3Mjc2MzI0NXww&ixlib=rb-4.1.0&q=85",
+    "abstract_geo": "https://images.unsplash.com/photo-1763333408639-6073d0587744?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTB8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBjb25jcmV0ZSUyMGFic3RyYWN0fGVufDB8fHx8MTc3Mjc2MzI0NXww&ixlib=rb-4.1.0&q=85",
+    "barugel_logo_placeholder": "Use text 'BARUGEL' in 'Playfair Display' font if SVG unavailable",
+    "wtf_logo_placeholder": "Use text 'WTF AGENCY' in 'JetBrains Mono' font"
+  },
+  "page_structure": {
+    "header": "Transparent fixed nav, blurring on scroll. Logo left, minimal links right.",
+    "hero": "Split screen or Tetris Grid. Left: 'Transformando 90 Años de Historia'. Right: High-end marble/bathroom image. Scroll indicator: 'Explorar'.",
+    "situation_analysis": "Section Title: 'Diagnóstico Actual'. Interactive cards showing pain points vs opportunities. Hover to reveal data.",
+    "competitive_landscape": "Section Title: 'Panorama Competitivo'. Comparison chart (Radar or Bar) comparing Barugel vs Competitors on Digital Maturity.",
+    "solution_timeline": "Section Title: 'La Transformación: 3 Fases'. Vertical scrollytelling. Phase 1: Foundation. Phase 2: Growth. Phase 3: Domination. Progress bar animates on scroll.",
+    "investment": "Section Title: 'Inversión & Estructura'. Clean pricing table, architectural drawing style lines. 'ROI Proyectado' highlighted in Orange.",
+    "results_dashboard": "Section Title: 'Resultados Proyectados'. Bento Grid dashboard. Animated counters for 'Conversion Rate', 'Traffic', 'Revenue'.",
+    "footer": "Simple, large typography. 'Construyamos el Futuro'. No contact form (as per request), just Agency credits."
+  },
+  "accessibility": {
+    "contrast": "Ensure text-gray-400 is only for non-critical labels. Use text-gray-600 for body.",
+    "reduced_motion": "Wrap all framer-motion components in MotionConfig to respect prefers-reduced-motion.",
+    "semantic_html": "Use <article>, <section>, <nav>, <main> tags properly."
+  },
+  "universal_guidelines": {
+    "component_reuse": "Prioritize shadcn/ui. Customize radii to 0px or 2px. Use 'sonner' for toasts.",
+    "interaction": "Micro-animations on EVERY clickable element. No dead clicks.",
+    "alignment": "Optical alignment > Geometric alignment.",
+    "testing": "Add data-testid to all interactive elements."
+  },
+  "instructions_to_main_agent": "Implement using React + Tailwind. Use Framer Motion for scroll animations (parallax, reveal). Ensure the 'Italian Modern' feel comes from Typography (Playfair) and Spacing (Generous), not just images. Keep it premium, strict grids, architectural."
+}
