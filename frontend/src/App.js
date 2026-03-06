@@ -323,6 +323,7 @@ const DiagnosisSection = () => {
 const CompetitiveLandscape = () => {
   const competitors = [
     { name: "FV", followers: 118000, position: "Líder tradicional", color: "#666" },
+    { name: "SBG", followers: 48000, position: "Premium exclusivo", color: "#777" },
     { name: "Cerro Negro", followers: 66000, position: "130 años heritage", color: "#888" },
     { name: "Blaisten", followers: 91000, position: "Líder e-commerce", color: "#999" },
     { name: "BARUGEL", followers: 97000, position: "OPORTUNIDAD", color: "#E65100", highlight: true },
@@ -331,7 +332,7 @@ const CompetitiveLandscape = () => {
   const gaps = [
     { area: "E-commerce", percentage: 90, label: "90% del mercado sin capturar" },
     { area: "AI Integration", percentage: 100, label: "0% competidores con IA" },
-    { area: "Video Content", percentage: 90, label: "10% saturación del mercado" },
+    { area: "Marketing Experiencial", percentage: 85, label: "Solo SBG activo en eventos" },
   ];
 
   return (
@@ -360,7 +361,7 @@ const CompetitiveLandscape = () => {
 
         {/* Competitors Chart */}
         <SectionReveal className="mb-20">
-          <div className="grid md:grid-cols-4 gap-4">
+          <div className="grid md:grid-cols-5 gap-4">
             {competitors.map((comp, index) => (
               <motion.div
                 key={index}
