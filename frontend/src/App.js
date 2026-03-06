@@ -6,8 +6,9 @@ import {
   Instagram, ShoppingCart, Search, MessageSquare, Video, Palette
 } from 'lucide-react';
 
-// WTF Agency Logo URL
+// WTF Agency Logo URLs
 const WTF_LOGO = "https://customer-assets.emergentagent.com/job_barugel-transform/artifacts/uie5u4fs_logo-wtf.png";
+const WTF_LOGO_BLACK = "https://customer-assets.emergentagent.com/job_barugel-transform/artifacts/wsbw9ziw_logo-wtf-negro.png";
 
 // Image URLs
 const IMAGES = {
@@ -82,7 +83,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-6">
           <img 
-            src={WTF_LOGO} 
+            src={scrolled ? WTF_LOGO_BLACK : WTF_LOGO_BLACK} 
             alt="WTF Agency" 
             className="h-10 w-auto"
           />
