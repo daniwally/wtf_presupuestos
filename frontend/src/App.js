@@ -137,7 +137,7 @@ const HeroSection = () => {
             >
               <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100]">90 Años de Historia</span>
               <span className="text-xs font-mono text-gray-400">+</span>
-              <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#1A1A1A]">30 Días de Transformación</span>
+              <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#1A1A1A]">IA Como Core</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -149,9 +149,9 @@ const HeroSection = () => {
             >
               <span className="text-[#1A1A1A]">Barugel</span>
               <br />
-              <span className="text-[#E65100]">Transformación</span>
+              <span className="text-[#E65100]">Agencia</span>
               <br />
-              <span className="text-[#1A1A1A]">Digital</span>
+              <span className="text-[#1A1A1A]">Integral</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -161,8 +161,8 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 1.2 }}
               className="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-12"
             >
-              De líder tradicional a dominador digital del sector construcción en Argentina. 
-              Una propuesta diseñada para conquistar el mercado digital.
+              Servicio integral de agencia con IA como core. 
+              El nuevo modelo WTF Agency para dominar el sector construcción.
             </motion.p>
 
             {/* CTA */}
@@ -236,7 +236,7 @@ const DiagnosisSection = () => {
     { label: "Heritage", sublabel: "90 años establecidos", status: true, icon: Building2 },
     { label: "Portfolio", sublabel: "Gama completa de productos", status: true, icon: Palette },
     { label: "Reconocimiento", sublabel: "Líder de mercado", status: true, icon: Target },
-    { label: "Infraestructura Digital", sublabel: "Necesita transformación", status: false, icon: Globe },
+    { label: "Infraestructura Digital", sublabel: "Necesita integración IA", status: false, icon: Globe },
     { label: "E-commerce", sublabel: "Inexistente", status: false, icon: ShoppingCart },
     { label: "Customer Experience", sublabel: "Desactualizado", status: false, icon: Users },
   ];
@@ -429,11 +429,11 @@ const SolutionSection = () => {
   const phases = [
     {
       number: "01",
-      title: "Fundación Digital",
+      title: "Fundación IA",
       timeline: "Meses 1-3",
       items: [
         { icon: Globe, text: "Website rediseño completo + e-commerce" },
-        { icon: Instagram, text: "Instagram optimización + estrategia contenido" },
+        { icon: Instagram, text: "Instagram optimización + estrategia contenido IA" },
         { icon: MessageSquare, text: "AI chatbot implementación" },
         { icon: Search, text: "SEO dominación (20+ keywords)" },
         { icon: BarChart3, text: "Analytics + CRM integración" },
@@ -445,24 +445,24 @@ const SolutionSection = () => {
       title: "Liderazgo de Mercado",
       timeline: "Meses 4-6",
       items: [
-        { icon: Palette, text: "Content factory: 100+ transformaciones" },
+        { icon: Palette, text: "Content factory IA: 100+ transformaciones" },
         { icon: Video, text: "Serie de contenido video (50+ videos)" },
         { icon: Users, text: "Partnerships influencers (15 arquitectos)" },
         { icon: Target, text: "Dominación multi-plataforma" },
-        { icon: Zap, text: "Optimización customer experience" },
+        { icon: Zap, text: "Automatización customer experience" },
       ],
       image: IMAGES.showroom
     },
     {
       number: "03",
-      title: "Innovación y Liderazgo",
+      title: "Innovación y Escala",
       timeline: "Meses 7-12",
       items: [
         { icon: Smartphone, text: "AR/VR diseñador de espacios (primero en Argentina)" },
         { icon: MessageSquare, text: "Recomendaciones AI-powered" },
         { icon: Smartphone, text: "Desarrollo app móvil" },
         { icon: TrendingUp, text: "Thought leadership industria" },
-        { icon: Globe, text: "Preparación expansión internacional" },
+        { icon: Globe, text: "Preparación expansión regional" },
       ],
       image: IMAGES.architecture
     },
@@ -476,10 +476,10 @@ const SolutionSection = () => {
           <div className="mb-20 text-center">
             <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100] mb-4 block">03 — Solución WTF</span>
             <h2 className="font-playfair text-4xl md:text-6xl font-medium tracking-tight mb-6">
-              La Transformación
+              Servicio Integral + IA
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Un plan de 12 meses diseñado para convertir a Barugel en el líder digital indiscutido del sector construcción.
+              Un plan de 12 meses con IA como core para convertir a Barugel en el líder indiscutido del sector construcción.
             </p>
           </div>
         </SectionReveal>
@@ -554,9 +554,9 @@ const SolutionSection = () => {
 // Investment Section
 const InvestmentSection = () => {
   const comparison = [
-    { method: "Agencia Tradicional", price: "USD 300,000+", status: "Ineficiente" },
-    { method: "Equipo In-House", price: "USD 400,000+", status: "Complejo" },
-    { method: "WTF Agency", price: "USD 150,000", status: "Óptimo", highlight: true },
+    { method: "Agencia Tradicional", price: "USD 8,000+/mes", status: "Sin IA" },
+    { method: "Equipo In-House", price: "USD 15,000+/mes", status: "Complejo" },
+    { method: "WTF Agency", price: "USD 3,500/mes", status: "IA Integrada", highlight: true },
   ];
 
   return (
@@ -570,7 +570,7 @@ const InvestmentSection = () => {
               Estructura de Inversión
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl">
-              Transparencia total. Sin costos ocultos. Resultados medibles.
+              Servicio integral de agencia con IA como core. Sin costos ocultos.
             </p>
           </div>
         </SectionReveal>
@@ -592,7 +592,7 @@ const InvestmentSection = () => {
               </span>
               <div className="flex items-baseline gap-2 mb-8">
                 <span className="font-playfair text-6xl md:text-7xl font-medium text-[#1A1A1A]">
-                  $12,500
+                  $3,500
                 </span>
                 <span className="text-lg text-gray-500">USD</span>
               </div>
@@ -600,15 +600,15 @@ const InvestmentSection = () => {
               <div className="space-y-4 mb-8">
                 <div className="flex justify-between py-3 border-b border-gray-100">
                   <span className="text-sm text-gray-600">Compromiso Anual</span>
-                  <span className="text-sm font-medium">USD 150,000</span>
+                  <span className="text-sm font-medium">USD 42,000</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-gray-100">
                   <span className="text-sm text-gray-600">Setup Fees</span>
                   <span className="text-sm font-medium text-[#E65100]">Sin costo</span>
                 </div>
                 <div className="flex justify-between py-3 border-b border-gray-100">
-                  <span className="text-sm text-gray-600">Costos Ocultos</span>
-                  <span className="text-sm font-medium text-[#E65100]">Ninguno</span>
+                  <span className="text-sm text-gray-600">IA Integrada</span>
+                  <span className="text-sm font-medium text-[#E65100]">Incluida</span>
                 </div>
                 <div className="flex justify-between py-3">
                   <span className="text-sm text-gray-600">Facturación</span>
@@ -618,7 +618,7 @@ const InvestmentSection = () => {
 
               <div className="p-4 bg-[#F5F5F5] text-center">
                 <span className="text-xs font-mono tracking-wider text-gray-500">
-                  ENFOQUE ORIENTADO A RESULTADOS
+                  SERVICIO INTEGRAL CON IA COMO CORE
                 </span>
               </div>
             </motion.div>
@@ -656,10 +656,10 @@ const InvestmentSection = () => {
 
             <div className="mt-8 p-6 bg-[#1A1A1A] text-white">
               <div className="flex items-center justify-between">
-                <span className="text-sm">Ahorro vs. Alternativas</span>
-                <span className="text-2xl font-playfair text-[#E65100]">50%+</span>
+                <span className="text-sm">Ahorro vs. Agencia Tradicional</span>
+                <span className="text-2xl font-playfair text-[#E65100]">56%+</span>
               </div>
-              <p className="text-xs text-gray-400 mt-2">Con resultados superiores garantizados</p>
+              <p className="text-xs text-gray-400 mt-2">Con IA integrada y resultados superiores</p>
             </div>
           </SectionReveal>
         </div>
