@@ -137,7 +137,7 @@ const HeroSection = () => {
             >
               <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100]">90 Años de Historia</span>
               <span className="text-xs font-mono text-gray-400">+</span>
-              <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#1A1A1A]">IA Como Core</span>
+              <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#1A1A1A]">IA + CX + Experiencial</span>
             </motion.div>
 
             {/* Main Headline */}
@@ -161,7 +161,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 1.2 }}
               className="text-lg md:text-xl text-gray-600 font-light leading-relaxed max-w-xl mb-12"
             >
-              Servicio integral de agencia con IA como core. 
+              Servicio integral de agencia con IA como core, Customer Experience y Marketing Experiencial. 
               El nuevo modelo WTF Agency para dominar el sector construcción.
             </motion.p>
 
@@ -429,27 +429,27 @@ const SolutionSection = () => {
   const phases = [
     {
       number: "01",
-      title: "Fundación IA",
+      title: "Fundación IA + CX",
       timeline: "Meses 1-3",
       items: [
         { icon: Globe, text: "Website rediseño completo + e-commerce" },
         { icon: Instagram, text: "Instagram optimización + estrategia contenido IA" },
-        { icon: MessageSquare, text: "AI chatbot implementación" },
+        { icon: MessageSquare, text: "AI chatbot + Customer Journey Mapping" },
         { icon: Search, text: "SEO dominación (20+ keywords)" },
-        { icon: BarChart3, text: "Analytics + CRM integración" },
+        { icon: Users, text: "CX Strategy: touchpoints & pain points analysis" },
       ],
       image: IMAGES.bathroom
     },
     {
       number: "02",
-      title: "Liderazgo de Mercado",
+      title: "Marketing Experiencial",
       timeline: "Meses 4-6",
       items: [
-        { icon: Palette, text: "Content factory IA: 100+ transformaciones" },
-        { icon: Video, text: "Serie de contenido video (50+ videos)" },
+        { icon: Palette, text: "Activaciones experienciales en showrooms" },
+        { icon: Video, text: "Eventos inmersivos para arquitectos" },
         { icon: Users, text: "Partnerships influencers (15 arquitectos)" },
-        { icon: Target, text: "Dominación multi-plataforma" },
-        { icon: Zap, text: "Automatización customer experience" },
+        { icon: Target, text: "Pop-up experiences en obras destacadas" },
+        { icon: Zap, text: "Brand activations en ferias del sector" },
       ],
       image: IMAGES.showroom
     },
@@ -459,10 +459,10 @@ const SolutionSection = () => {
       timeline: "Meses 7-12",
       items: [
         { icon: Smartphone, text: "AR/VR diseñador de espacios (primero en Argentina)" },
-        { icon: MessageSquare, text: "Recomendaciones AI-powered" },
-        { icon: Smartphone, text: "Desarrollo app móvil" },
-        { icon: TrendingUp, text: "Thought leadership industria" },
-        { icon: Globe, text: "Preparación expansión regional" },
+        { icon: MessageSquare, text: "Experiencias phygital en puntos de venta" },
+        { icon: Users, text: "Programa de fidelización experiencial" },
+        { icon: TrendingUp, text: "Thought leadership + eventos propios" },
+        { icon: Globe, text: "Expansión regional del modelo CX" },
       ],
       image: IMAGES.architecture
     },
@@ -476,10 +476,10 @@ const SolutionSection = () => {
           <div className="mb-20 text-center">
             <span className="text-xs font-mono tracking-[0.2em] uppercase text-[#E65100] mb-4 block">03 — Solución WTF</span>
             <h2 className="font-playfair text-4xl md:text-6xl font-medium tracking-tight mb-6">
-              Servicio Integral + IA
+              IA + CX + Experiencial
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Un plan de 12 meses con IA como core para convertir a Barugel en el líder indiscutido del sector construcción.
+              Servicio integral con IA como core, Customer Experience y Marketing Experiencial para convertir a Barugel en líder indiscutido.
             </p>
           </div>
         </SectionReveal>
@@ -618,7 +618,7 @@ const InvestmentSection = () => {
 
               <div className="p-4 bg-[#F5F5F5] text-center">
                 <span className="text-xs font-mono tracking-wider text-gray-500">
-                  SERVICIO INTEGRAL CON IA COMO CORE
+                  IA + CUSTOMER EXPERIENCE + MARKETING EXPERIENCIAL
                 </span>
               </div>
             </motion.div>
